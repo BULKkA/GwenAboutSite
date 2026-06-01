@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gwen Atelier — посты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="posts-page">
+    <div class="aurora aurora-one"></div>
+    <div class="aurora aurora-two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="На главную">
+        <span class="brand-mark">✂</span>
+        <span>Gwen Atelier</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="index.html#about">Обо мне</a>
+        <a href="index.html#projects">Проекты</a>
+        <a href="index.html#links">Ссылки</a>
+        <a class="nav-cta" href="index.html">Главная</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="posts-hero section-shell">
+        <div>
+          <p class="eyebrow">Личный дневник</p>
+          <h1>Посты из мастерской: мысли, релизы и маленькие заметки.</h1>
+          <p>Отдельная страница для блога с крупным баннером, фильтрами и карточками записей.</p>
+        </div>
+        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_0.jpg" alt="Gwen banner" />
+      </section>
+
+      <section class="section-shell post-tools" aria-label="Фильтры постов">
+        <button class="filter-chip active" type="button">Все</button>
+        <button class="filter-chip" type="button">Код</button>
+        <button class="filter-chip" type="button">Дизайн</button>
+        <button class="filter-chip" type="button">Личное</button>
+      </section>
+
+      <section class="section-shell post-grid" aria-label="Список постов">
+        <article class="post-card">
+          <span>01 июня 2026 · дизайн</span>
+          <h2>Как собрать уютную главную страницу</h2>
+          <p>Разбираю цветовую палитру, ритм карточек и декоративные детали, которые делают сайт похожим на ателье.</p>
+          <a href="#">Читать →</a>
+        </article>
+        <article class="post-card tall">
+          <span>28 мая 2026 · код</span>
+          <h2>Плейлист внизу сайта без лишнего шума</h2>
+          <p>Идея маленького sticky-плеера: он не мешает читать, но добавляет странице настроение.</p>
+          <a href="#">Читать →</a>
+        </article>
+        <article class="post-card image-post">
+          <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_11.jpg" alt="Gwen Cafe Cuties" />
+          <span>21 мая 2026 · личное</span>
+          <h2>Мои источники вдохновения</h2>
+          <p>Игры, музыка, пастельные мудборды и маленькие интерфейсные эксперименты.</p>
+          <a href="#">Читать →</a>
+        </article>
+        <article class="post-card">
+          <span>12 мая 2026 · проекты</span>
+          <h2>Что я хочу добавить дальше</h2>
+          <p>План: настоящие статьи, рабочая форма комментариев, кастомный аудио-плеер и тёмная тема.</p>
+          <a href="#">Читать →</a>
+        </article>
+      </section>
+    </main>
+
+    <aside class="music-player" aria-label="Плеер плейлиста">
+      <button class="play-toggle" type="button" aria-label="Воспроизвести или поставить на паузу">▶</button>
+      <div class="track-info">
+        <span class="track-title">Needlework Dreams</span>
+        <span class="track-meta">lo-fi playlist · 02:48</span>
+      </div>
+      <div class="progress"><span></span></div>
+      <button class="playlist-button" type="button">Плейлист</button>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
